@@ -1,1 +1,40 @@
 
+
+/* Game canvas */
+#glcanvas {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    touch-action: none;
+}
+
+/* Mobile touch controls */
+#touch-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 15px auto;
+    padding: 10px;
+    touch-action: none;
+}
+
+#touch-controls button {
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background: #333;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: none;
+}
+
+#touch-controls button:active {
+    background: #777;
+    transform: scale(0.95);
+}
